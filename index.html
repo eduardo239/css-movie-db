@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The movie DB</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,100;1,400&family=Shippori+Mincho+B1:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+  </head>
+  <body>
+    <header class="bg-primary">
+      <div class="container">
+        <div class="menu flex flex-v-center">
+          <div class="col">
+            <a href="#" class="clear"
+              ><img class="logo" src="./assets/logo_b.svg" alt="Logo"
+            /></a>
+          </div>
+          <div class="col">
+            <ul class="menu-content flex flex-v-center">
+              <li><a href="#">random</a></li>
+
+              <div class="dropdown">
+                <li><a class="btn-dropdown" href="#">random</a></li>
+                <div class="dropdown-content">
+                  <li><a href="#">random</a></li>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <li><a class="btn-dropdown" href="#">random</a></li>
+                <div class="dropdown-content">
+                  <li><a href="#">selector</a></li>
+                  <li><a href="#">integer</a></li>
+                  <li><a href="#">float</a></li>
+                </div>
+              </div>
+
+              <li><a href="#">random</a></li>
+            </ul>
+          </div>
+          <div class="col text-align-right">
+            <ul class="menu-content flex">
+              <li>
+                <a href="#" class="btn-icon">Pt-BR</a>
+              </li>
+              <li>
+                <a href="#" class="btn-icon">&#43;</a>
+              </li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+            <!-- menu mobile -->
+            <ul class="menu-mobile">
+              <div class="dropdown">
+                <li><a class="btn-dropdown" href="#">Menu</a></li>
+                <div class="dropdown-content">
+                  <li><a href="#">selector</a></li>
+                  <li><a href="#">integer</a></li>
+                  <li><a href="#">float</a></li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="min-h50 flex flex-v-center bg-img-1 py-2">
+      <div class="container">
+        <div class="col clear text-center">
+          <h1>Bem-Vindo(a).</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+            architecto distinctio.
+          </p>
+          <div class="search">
+            <input
+              class="inp inp-primary inp-border inp-search"
+              type="text"
+              name="search"
+            />
+            <button class="btn btn-primary btn-rounded btn-search">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-clear min-h50 py-2">
+      <div class="container">
+        <div class="col">
+          <div class="section-header flex flex-v-center">
+            <h3>Os mais populares</h3>
+            <div class="selector">
+              <div class="anchor">
+                <p>
+                  <a href="#">Movies</a>
+                </p>
+              </div>
+              <!--  -->
+              <div class="anchor selected">
+                <p>
+                  <a href="#">TV</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="movie-list-container">
+            <div class="flex movie-list">
+              <!--  -->
+              <div class="movie">
+                <div class="movie-header">
+                  <img
+                    src="https://picsum.photos/150/220"
+                    alt=""
+                    class="movie-poster"
+                  />
+                  <div class="dots"></div>
+                  <div class="score">75</div>
+                </div>
+                <div class="movie-content">
+                  <h4>Title</h4>
+                  <span class="desc">10 Jan 2020</span>
+                </div>
+              </div>
+              <!--  -->
+              <div class="movie">
+                <div class="movie-header">
+                  <img
+                    src="https://picsum.photos/150/220"
+                    alt=""
+                    class="movie-poster"
+                  />
+                  <div class="score">75</div>
+                </div>
+                <div class="movie-content">
+                  <h4>Title</h4>
+                  <span class="desc">10 Jan 2020</span>
+                </div>
+              </div>
+              <!--  -->
+              <div class="movie">
+                <div class="movie-header">
+                  <img
+                    src="https://picsum.photos/150/220"
+                    alt=""
+                    class="movie-poster"
+                  />
+                  <div class="score">75</div>
+                </div>
+                <div class="movie-content">
+                  <h4>Title</h4>
+                  <span class="desc">10 Jan 2020</span>
+                </div>
+              </div>
+              <!--  -->
+              <div class="movie">
+                <div class="movie-header">
+                  <img
+                    src="https://picsum.photos/150/220"
+                    alt=""
+                    class="movie-poster"
+                  />
+                  <div class="score">75</div>
+                </div>
+                <div class="movie-content">
+                  <h4>Title</h4>
+                  <span class="desc">10 Jan 2020</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-2 clear py-2">
+      <div class="container">
+        <div class="col">
+          <div class="section-header flex flex-v-center">
+            <h3>Os Trailers</h3>
+            <div class="selector">
+              <div class="anchor selected">
+                <p>
+                  <a href="#">Movies</a>
+                </p>
+              </div>
+              <!--  -->
+              <div class="anchor">
+                <p>
+                  <a href="#">TV</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="selector-items flex">
+            <!--  -->
+            <div class="trailer">
+              <img class="trailer-poster" src="./assets/video.jpg" alt="" />
+              <div class="trailer-content">
+                <h4>Title Movie</h4>
+                <span class="trailer-desc">Trailer from Movie Age</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="trailer">
+              <img class="trailer-poster" src="./assets/video.jpg" alt="" />
+              <div class="trailer-content">
+                <h4>Title Movie</h4>
+                <span class="trailer-desc">Trailer from Movie Age</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="trailer">
+              <img class="trailer-poster" src="./assets/video.jpg" alt="" />
+              <div class="trailer-content">
+                <h4>Title Movie</h4>
+                <span class="trailer-desc">Trailer from Movie Age</span>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
+      <div class="container">
+        <div class="col">
+          <div class="selector-items">??? movies</div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="min-h50 flex flex-v-center clear bg-img-2 py-2">
+      <div class="container flex">
+        <div class="col">
+          <div class="join">
+            <h3>Junte-se a nós</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              necessitatibus voluptatum exercitationem dicta doloribus
+              voluptatem voluptatibus esse sunt a excepturi.
+            </p>
+            <button class="btn btn-primary btn-rounded">click</button>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="list pl-3">
+            <li>Aproveite o TMDb sem propaganda</li>
+            <li>Mantenha uma Watchlist pessoal</li>
+            <li>
+              Filtre por seus serviços de streaming e ache algo para assistir
+            </li>
+            <li>Marque os Filmes e Séries que você já viu</li>
+            <li>Contribua e melhore nosso banco de dados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h50 bg-clear py-2">
+      <div class="container">
+        <div class="col">
+          <div class="section-header flex flex-v-center">
+            <h3>Os Trailers</h3>
+            <div class="selector">
+              <div class="anchor selected">
+                <p>
+                  <a href="#">Movies</a>
+                </p>
+              </div>
+              <!--  -->
+              <div class="anchor">
+                <p>
+                  <a href="#">TV</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="leader flex">
+            <div class="leader-list leader-left flex-1">
+              <div class="leader-item">
+                <div class="movie-name">Movie Name</div>
+                <progress max="100" value="80"></progress>
+              </div>
+              <!--  -->
+              <div class="leader-item">
+                <div class="movie-name">100% Lobo</div>
+                <progress max="100" value="76"></progress>
+              </div>
+              <!--  -->
+              <div class="leader-item">
+                <div class="movie-name">Vikings</div>
+                <progress max="100" value="64"></progress>
+              </div>
+              <!--  -->
+              <div class="leader-item">
+                <div class="movie-name">Eu Me Importo</div>
+                <progress max="100" value="44"></progress>
+              </div>
+              <!--  -->
+            </div>
+            <!--  -->
+            <div class="leader-list leader-right flex-1">
+              <div class="leader-item">
+                <div class="movie-name">Diário de um Vampiro</div>
+                <progress max="100" value="99"></progress>
+              </div>
+              <!--  -->
+              <div class="leader-item">
+                <div class="movie-name">Autodestruição</div>
+                <progress max="100" value="80"></progress>
+              </div>
+              <!--  -->
+              <div class="leader-item">
+                <div class="movie-name">Colheita Maldita</div>
+                <progress max="100" value="50"></progress>
+              </div>
+              <!--  -->
+              <div class="leader-item">
+                <div class="movie-name">Tripla Ameaça</div>
+                <progress max="100" value="10"></progress>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="min-h25 bg-gradient clear justify-space-between">
+      <div class="container flex">
+        <div class="col flex-1">
+          <div class="footer-logo text-align-right">
+            <div>
+              <img class="logo" src="./assets/logo_b.svg" alt="Logo" />
+            </div>
+            <button class="btn btn-reverse br-2 bs-1">
+              Junte-se a comunidade
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-link-list">
+            <h4>O Básico</h4>
+            <ul class="footer-links">
+              <li><a href="#">Link para Download</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Mensagem</a></li>
+              <li><a href="#">Chat</a></li>
+              <li><a href="#">Ajuda</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-link-list">
+            <h4>O Intermediário</h4>
+            <ul class="footer-links">
+              <li><a href="#">Pet Shop</a></li>
+              <li><a href="#">Tijolo</a></li>
+              <li><a href="#">Estádio</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Extra</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-link-list">
+            <h4>O Avançado</h4>
+            <ul class="footer-links">
+              <li><a href="#">Homeland</a></li>
+              <li><a href="#">Breaking Bad</a></li>
+              <li><a href="#">Ozark</a></li>
+              <li>
+                <a href="#"
+                  ><span
+                    >Photo by
+                    <a
+                      href="https://unsplash.com/@matthewhenry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                      >Matthew Henry</a
+                    >
+                    on
+                    <a
+                      href="https://unsplash.com/s/photos/purple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                      >Unsplash</a
+                    ></span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-link-list">
+            <h4>As Regras</h4>
+            <ul class="footer-links">
+              <li><a href="#">Comida</a></li>
+              <li><a href="#">Azul</a></li>
+              <li><a href="#">Ligação</a></li>
+
+              <li>
+                <span
+                  >Photo by
+                  <a
+                    href="https://unsplash.com/@nimbus_vulpis?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                    >Rafael Garcin</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                    >Unsplash</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

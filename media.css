@@ -1,0 +1,116 @@
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width: 601px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  /* menu */
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu-content {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: inline-block;
+    position: relative;
+  }
+
+  .menu-mobile .btn-dropdown {
+    display: block;
+    padding: 1rem;
+  }
+
+  .menu-mobile .dropdown-content {
+    right: 0;
+  }
+  .dropdown-content li a {
+    padding: 1rem;
+  }
+
+  /* movies */
+  .movie-list-container {
+    text-align: center;
+    margin: 0 2rem;
+  }
+  .movie-list {
+    /* display: grid; */
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .movie {
+    max-width: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+  .movie-content h4 {
+    text-align: left;
+  }
+
+  /* trailers */
+  .trailer {
+    text-align: center;
+  }
+
+  /* join */
+  .join {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  /* leader */
+  .leader {
+    margin: 2rem 3rem;
+  }
+  .leader-left,
+  .leader-right {
+    margin: 0;
+  }
+  /* footer */
+  footer {
+    padding: 2rem 0;
+  }
+  .footer-logo {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .footer-links {
+    margin-bottom: 2rem;
+  }
+  .footer-link-list {
+    margin: 0;
+  }
+  .footer-links li {
+    text-align: center;
+  }
+}
+@media (max-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (max-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (max-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
