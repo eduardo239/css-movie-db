@@ -272,7 +272,7 @@ progress::-moz-progress-bar {
 }
 
 footer {
-  padding: 3rem 1rem;
+  padding: 3rem 0;
 }
 
 .footer-link-list {
