@@ -51,7 +51,7 @@
   /* movies */
   .movie-list-container {
     text-align: center;
-    margin: 0 2rem;
+    margin: 0 0.5rem;
   }
   .movie-list {
     /* display: grid; */
